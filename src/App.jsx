@@ -2,16 +2,22 @@ import { Header } from './components/Header'
 import { Post } from './Post'
 
 import './global.css'
+import styles from './App.module.css'
 
 export function App() {
   return (
     <div>
       <Header />
 
-      <Post 
-        author="Gabriel Salvador" 
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vero magni tempora, qui natus ad, animi odit dicta velit quia commodi ipsum aut voluptatibus tenetur nulla dolorum. Facere, illum beatae"
-      />
+      <div className={styles.wrapper}>
+        <aside>
+          sidebar
+        </aside>
+
+        <main>
+          <Post author='Gabriel Salvador' content='Salve rapaziada tudo belezinha'/>
+        </main>
+      </div>
     </div>
   )
 }
