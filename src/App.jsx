@@ -1,9 +1,9 @@
 import { Header } from './components/Header'
-import { Post } from './Post'
+import { Post } from './components/Post'
+import { Sidebar } from './components/Sidebar'
 
 import './global.css'
 import styles from './App.module.css'
-import { Sidebar } from './components/Sidebar'
 
 export function App() {
   return (
@@ -16,7 +16,8 @@ export function App() {
         </aside>
 
         <main>
-          <Post author='Gabriel Salvador' content='Salve rapaziada tudo belezinha'/>
+          <Post />
+          <Post />
         </main>
       </div>
     </div>
